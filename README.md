@@ -22,8 +22,9 @@ written on the line 2.
 The servo specifications should be checked and the code should be edited with correct values
 of minimum and maximum µS of the pulse. That is in the beginning of the code:
 
-```#define MIN_US 575
-#define MAX_US 2460
+```
+    #define MIN_US 575
+    #define MAX_US 2460
 ```
 
 ## The schematic
