@@ -13,6 +13,19 @@ a reserve of Arduino Nanos and basic rotary encoders.
 
 ![LCD box](img/tm161aba6_box.jpg)
 
+## About the code
+
+The LCD I had thinks it's a 8x2 display even it is 16x1 in the reality. So if longer than 8 
+character string is written to the screen, only 8 first are displayed. The next 8 chars must be 
+written on the line 2.  
+
+The servo specifications should be checked and the code should be edited with correct values
+of minimum and maximum µS of the pulse. That is in the beginning of the code:
+
+```#define MIN_US 575
+#define MAX_US 2460
+```
+
 ## The schematic
 
 [![Schematic](img/timelapser_schema.png)](img/timelapser_schema_big.png)
